@@ -1,0 +1,23 @@
+---
+---
+
+@import "variables";
+
+.content {
+  font-size: $custom-font-size;
+  
+}
+
+body {
+  background-color: #000;
+  color:#fff;
+
+}
+
+.jumbotron {
+  text-align: left;
+  background: url('../img/lamp-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  height: 500px;
+}
