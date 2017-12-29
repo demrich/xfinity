@@ -393,6 +393,31 @@ body {
   font-size: 28px;
   letter-spacing: 3px; }
 
+/* MOBILE PRODUCTS */
+#mobile-products .row {
+  padding-bottom: 70px; }
+
+#mobile-products .prod {
+  padding-top: 20px;
+  vertical-align: middle; }
+
+#mobile-products img {
+  padding-top: 0px;
+  vertical-align: middle; }
+
+#mobile-products .prod-title {
+  color: #c61017;
+  font-size: 20px;
+  font-weight: 700; }
+
+#mobile-products p {
+  font-size: 18px; }
+
+#mobile-products h4 {
+  font-size: 20px;
+  padding: 0 0 10px 0;
+  margin: 0; }
+
 /* FOOTER */
 .page-footer {
   height: initial;
