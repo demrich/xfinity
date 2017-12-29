@@ -37,16 +37,60 @@
           <div class="collapse navbar-collapse" id="myNavbar">
 
             <ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+			<li><a href="https://xfinity.easyzigbee.com/products">Shop</a></li>
+			<li><a href="https://xfinity.easyzigbee.com/products">Products</a></li>
+			<li><a href="https://xfinity.easyzigbee.com/cart">Cart &nbsp; <span class="badge" id="comparison-count">0</span>
+			</a></li>
+			</ul>
+		  </div>
+
+		</div>
+	  </nav>
+	  <nav class="page-nav hidden-sm hidden-xs">
+			<div class="container">
+				<ul id="nav">
+					<li>
+						<a href="https://xfinity.easyzigbee.com/" title="Home">Home</a>
+					</li>
+					<li>
+						<a href="https://xfinity.easyzigbee.com/products" title="Products">Products</a>
+					</li>
+					<li>
+						<a href="https://xfinity.easyzigbee.com/energy-saving-tips" title="Energy Tips">Energy Tips</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
 	{{content}}
+
+	<footer class="page-footer">
+			<div class="container">
+				<ul class="row">
+					<li class="col-sm-3">
+						<a href="https://xfinity.easyzigbee.com">
+							<img src="./assets/img/logo.png" alt="Comcast" width="125px">
+						</a>
+					</li>
+					<li class="col-sm-3">
+						<a href="//twitter.com/XFINITY">
+							<i class="fa fa-twitter" aria-hidden="true"></i> Follow us for exclusive deals
+						</a>
+					</li>
+					<li class="col-sm-3">
+						<a href="//www.youtube.com/user/xfinity?feature=results_main">
+							<i class="fa fa-youtube" aria-hidden="true"></i> Find tutorials and demos
+						</a>
+					</li>
+					<li class="col-sm-3">
+						<a href="//www.facebook.com/xfinity">
+							<i class="fa fa-facebook" aria-hidden="true"></i> Connect on Facebook
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
 	<script src="{{'/node_modules/jquery/jquery.cycle.js/' | prepend: site.baseurl}}"></script>
 	<script src="{{'/node_modules/callout.min.js' | prepend: site.baseurl}}"></script>
 	<script src="{{'/node_modules/current.js' | prepend: site.baseurl}}"></script>

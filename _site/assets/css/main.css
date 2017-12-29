@@ -6,37 +6,196 @@ body {
   color: #fff; }
 
 .navbar {
-  background: #000; }
+  background: #000;
+  min-height: 75px; }
 
-@media (min-width: 768px) {
+.navbar-right a {
+  color: #d51b22 !important;
+  font-size: 18px; }
+
+@media (min-width: 990px) {
   .navbar {
-    padding-left: 100px;
+    padding-left: 75px;
     padding-right: 100px; }
 
   .navbar-brand {
     margin: 0;
-    padding: 5px 0 0 170px; } }
+    padding: 16px 0 0 170px; }
+
+  .navbar-right {
+    padding-right: 100px;
+    padding-top: 12px; } }
 @media (max-width: 768px) {
   .navbar {
     padding-bottom: 20px; }
 
   .navbar-toggle {
     padding-top: 10px; } }
+.page-nav {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  z-index: 2000 !important; }
+
+#nav {
+  margin-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+  display: inline-block; }
+
+#nav li {
+  list-style: none;
+  position: relative; }
+
+#nav > li {
+  float: left; }
+
+#nav > li > a {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #141414;
+  font-size: 18px;
+  line-height: 50px;
+  position: relative;
+  z-index: 2; }
+
+#nav a {
+  display: block;
+  text-decoration: none; }
+
+#nav > li > a:hover, #nav > li:hover > a {
+  color: #fff;
+  background-color: #d51b22; }
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px; }
+
+.header-right {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-right: 100px;
+  text-align: right;
+  float: right; }
+
+.plug-media {
+  margin-top: -50px;
+  position: relative;
+  top: 39%;
+  width: 350px;
+  left: 10%;
+  z-index: 1500 !important;
+  -webkit-transition: right .3s ease-out;
+  -o-transition: right .3s ease-out;
+  transition: right .3s ease-out; }
+
+.hand-media {
+  margin-top: -215px;
+  position: relative;
+  top: 63%;
+  width: 200px;
+  left: 25%;
+  z-index: 1500 !important;
+  -webkit-transition: right .3s ease-out;
+  -o-transition: right .3s ease-out;
+  transition: right .3s ease-out; }
+
+.search-info {
+  color: #9c9c9c;
+  font-size: 14px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  float: left;
+  position: relative;
+  top: 5px;
+  padding-right: 10px; }
+
+.search {
+  margin-right: 20px;
+  float: right;
+  position: relative;
+  top: 2px; }
+
+.search input[type="text"] {
+  width: 115px;
+  height: 30px;
+  padding: 0 30px 0 15px;
+  background-color: #d51b22;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 1 !important; }
+
+.search .search-btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  z-index: 2 !important; }
+
+.icon {
+  border: 0;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  background-image: url("../img/icons.png"); }
+
+/* ICONS */
+.icon-search {
+  background-position: -30px 0; }
+
+.icon-play {
+  background-position: -90px 0; }
+
 .btn-default {
   background-image: linear-gradient(to bottom, #f82c33 0, #ed1c24 100%);
   background-repeat: repeat-x;
   background-color: #c61017;
-  border-radius: 15px;
+  border-radius: 23px;
   border-color: rgba(0, 0, 0, 0);
   color: #fff;
   font-size: 18px;
   letter-spacing: 2px;
-  padding: 10px; }
+  padding: 10px 20px 10px 20px; }
 
 .logo {
   width: 130px; }
 
+/* MOBILE HEADER */
+#mobile-header {
+  width: 100%; }
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
 /* JUMBOTRON */
+@media (max-width: 1024px) {
+  .desktop {
+    display: none; } }
 .jumbotron {
   text-align: left;
   background: url("../img/lamp-header.jpg");
@@ -58,10 +217,13 @@ body {
   margin: 0;
   line-height: 30px; }
 
+.jumbotron .btn-default {
+  margin-top: 25px; }
+
 /* SECTION TWO */
 #info-content {
   background: #ed1c24;
-  padding: 20px 0 80px 0;
+  padding: 20px 0 40px 0;
   margin: 0; }
 
 .main-icon {
@@ -217,3 +379,60 @@ body {
   margin-bottom: 10px;
   font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
   font-size: 30px; }
+
+/* SWITCH SECTION */
+#switch-section {
+  padding-top: 20px; }
+
+#switch-section h2 {
+  font-size: 53px;
+  padding-bottom: 15px;
+  letter-spacing: 3px; }
+
+#switch-section p {
+  font-size: 28px;
+  letter-spacing: 3px; }
+
+/* FOOTER */
+.page-footer {
+  height: initial;
+  padding-bottom: 0;
+  background-color: #000;
+  padding-top: 60px;
+  color: #fff;
+  text-align: center; }
+
+.page-footer li {
+  list-style: none;
+  font-size: 12px;
+  line-height: 63px; }
+
+.page-footer li a {
+  color: #fff;
+  font-size: 18px; }
+
+a#cta_button_454248_a2107543-3229-4276-b76b-4c1661dfacd8 {
+  -webkit-font-smoothing: antialiased !important;
+  cursor: pointer !important;
+  -moz-user-select: none !important;
+  -webkit-user-select: none !important;
+  -o-user-select: none !important;
+  user-select: none !important;
+  display: inline-block !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border-radius: 9999px !important;
+  font-family: sans-serif !important;
+  background-color: #29ace2 !important;
+  background-image: url(https://static.hsappstatic.net/content_shared_assets/static-1.3336/img/cta_download_button_background_wide.png) !important;
+  background-position: 0 60% !important;
+  background-repeat: no-repeat !important;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25) !important;
+  -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25) !important;
+  -moz-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25) !important;
+  color: #3991b5 !important;
+  border: 1px solid #ccc !important;
+  text-shadow: none !important;
+  line-height: 1.5em !important;
+  padding: 12px 32px 12px 64px !important; }

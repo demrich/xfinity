@@ -2,8 +2,9 @@
 layout: default
 ---
 
+    <!-- DESKTOP JUMBOTRON -->
       
-      <div class="jumbotron">
+      <div class="desktop jumbotron hidden-sm hidden-xs">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -11,8 +12,10 @@ layout: default
           <h1>Smart Home</h1>
           <p>Control and schedule scenes within your home for different times of 
             the day or different events with the touch of your finger!</p>
-            <a class="btn btn-default">Watch the Video<span class="icon icon-play"></span>	</a>
+            <a class="btn btn-default">Watch the Video <span class="icon icon-play"></span>	</a>
         </div>
+        <img src="./assets/img/ezzigbee-plug.png" class="plug-media" alt="EZ Zigbee">
+        <img src="./assets/img/hand.png" class="hand-media" alt="Hand">
         <div class="col-md-4">
 
 
@@ -20,7 +23,20 @@ layout: default
         </div>     
         </div>
       </div>
+    <!-- END JUMBOTRON -->
 
+    <!-- MOBILE HEADER -->
+    <div id="mobile-header">
+    <div class="container-fluid no-padding visible-sm visible-xs">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-responsive" src="./assets/img/mobile-header.jpg">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- END MOBILE -->
 
       <!-- DESCRIPTION SECTION -->
 
@@ -53,8 +69,16 @@ layout: default
 
             <!-- END DESCRIPTION -->
 
+            <div class="container visible-sm visible-xs">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="img-responsive" src="./assets/img/wireless-home.jpg" alt="Wireless Home">
+                    </div>
+                </div>
+            </div>
+
             <!-- PRODUCT MAP -->
-            <div id="prod-map">
+            <div id="prod-map" class="hidden-sm hidden-xs desktop">
             <div class="index-section-2">
                     <div class="bg-attachment-1"></div>
                     <div class="container callout-map">
@@ -82,12 +106,44 @@ layout: default
                             <p><a class="btn btn-default" href="http://54.244.195.230/products">View Products</a></p>
                         </div>
                     </div>
-                    <div class="bg-attachment-2"></div>
                 </div>
             </div>
-            <!-- END MAP -->      
+            <!-- END MAP -->     
+            
+            <!-- MOBILE PRODUCTS -->
 
+
+
+            <!-- END MOBILE -->
+            
+
+            <div id="switch-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2>Convert any GE Smart Control to a Multi-Location Switch</h2>
+                            <p>Control lighting from up to (5) different switches.</p><br>
+                            <img class="img-responsive center-block" src="./assets/img/switch-control.png"><br><br>
+                            <p><a class="btn btn-default" href="">Shop Now &#9658;</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
       <br><br>
-      <footer class="container-fluid text-center">
-        <p>Footer Text</p>
-      </footer>
+    <div id="home-auto">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+                    <p>FREE White Paper, Home Automation Protocols and Languages 101: An Introduction.</p><br>
+                    <p><span id="hs-cta-wrapper-7aa2d264-8054-455c-8392-79175b384ac6" class="hs-cta-wrapper"> <span id="hs-cta-7aa2d264-8054-455c-8392-79175b384ac6" class="hs-cta-node hs-cta-7aa2d264-8054-455c-8392-79175b384ac6"> <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--> <a href="http://cta-redirect.hubspot.com/cta/redirect/454248/7aa2d264-8054-455c-8392-79175b384ac6" target="_blank"><img id="hs-cta-img-7aa2d264-8054-455c-8392-79175b384ac6" class="hs-cta-img" style="border-width: 0px;" src="https://no-cache.hubspot.com/cta/default/454248/7aa2d264-8054-455c-8392-79175b384ac6.png" alt="Download Home Automation Guide" /></a> </span>
+                        <script charset="utf-8" type="text/javascript" src="https://js.hscta.net/cta/current.js"></script>
+                        <script type="text/javascript">// <![CDATA[
+                        hbspt.cta.load(454248, '7aa2d264-8054-455c-8392-79175b384ac6');
+                        // ]]></script>
+                        </span></p>
+                </div>
+            </div>
+        </div>
+    </div>
